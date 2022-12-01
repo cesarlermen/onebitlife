@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView } from "react-native-gesture-handler";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 import DefaultButton from '../../Compenents/Common/DefaultButton';
+import ExplanationCard from '../../Compenents/Explanation/ExplanationCard';
 
 export default function AppExplanation(){
     function handleSetShowHome(){
@@ -16,6 +17,7 @@ export default function AppExplanation(){
                     <Text style={styles.title}>
                         Antes, deixa {"\n"} eu te explicar...
                     </Text>
+                    <ExplanationCard />
                     <Text style={styles.descriptionCta}>
                         Pronto(a) para subir de nível na vida?
                     </Text>
